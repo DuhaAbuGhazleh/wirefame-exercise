@@ -1,84 +1,89 @@
 
 
 body {
-width: 960px;
-padding: 30px;
-
-}
-
-a{
-text-decoration: none;
-color: rgba(0, 0, 0, 0.918);
-}
-
-.class-bigPic{
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-header{
-    display: grid;
-    grid-template-columns: 25% auto ;
-    align-items: center;
-    margin-bottom: 30px;
-}
-main{
-    margin-bottom: 30px;
-}
-
-
-header nav a:hover {
-    color: rgb(43, 19, 97);
-
-}
-
-nav{
-   display: grid;
-   grid-template-columns:auto  auto  auto auto;
-}
-
-.threeImg{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    width: 960px;
+    padding: 30px;
+    
+    }
+    
+    a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.918);
+    }
+    
+    .class-bigPic{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    header{
+        display: grid;
+        grid-template-columns: 25% auto ;
+        align-items: center;
+        margin-bottom: 30px;
+        background-color: #666;
+        padding: 10px 68px;
+        
+    }
+    main{
+        margin-bottom: 30px;
+    }
+    
+    
+    header nav a:hover {
+        color: rgb(43, 19, 97);
+        color: white;
+    }
+    
+    nav{
+       display: grid;
+       grid-template-columns:auto  auto  auto auto;
+    }
+    
+    .threeImg{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .item1 { grid-area: pic;
+     }
+    
+    .item2 { grid-area: p; 
+    }
+    
+    .item3 { grid-area: call;
+     }
+    
+    .sec-img-and-p{
+        display:grid ;
+        grid-template-areas:
+            'pic p'
+            'pic call';
     gap: 30px;
-    margin-bottom: 30px;
-}
-
-.item1 { grid-area: pic;
- }
-
-.item2 { grid-area: p; 
-}
-
-.item3 { grid-area: call;
- }
-
-.sec-img-and-p{
-    display:grid ;
-    grid-template-areas:
-        'pic p'
-        'pic call';
-gap: 30px;
-}
-
-.item2{
-    grid-column-start: p;
-    grid-column-end: call;
-    overflow: scroll ;
-  
- }
-
- .item3{
-     grid-column-start: call ;
-     grid-column-end: pic;
- }
- .sec-img-and-p > div {
-     gap: 30px;
-     margin-bottom: 30px;
- }
-footer{
-    width: 100%;
-    background-color: #ddd;
-    text-decoration: rgb(12, 12, 12);
-
-}
+    }
+    
+    .item2{
+        grid-column-start: p;
+        grid-column-end: call;
+        overflow: scroll ;
+        height: 400px;
+      
+     }
+    
+    .item3{
+         height: 60px;
+     }
+    
+     .sec-img-and-p > div {
+         gap: 30px;
+         margin-bottom: 30px;
+     }
+    footer{
+        width: 100%;
+        background-color: #666;
+        text-decoration: rgba(12, 12, 12, 0.007);
+        height: 200px;
+    
+    }
